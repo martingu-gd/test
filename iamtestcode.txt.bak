@@ -1,5 +1,0 @@
-
-create or alter view appsec_acunetix_issue_status
-as
-select ai.id, ai.title, ai.url, ai. WebsiteRootUrl, ai.Severity, aws.name, ai.LastSeenDate from AcunetixIssue as ai join AcunetixWebSite as aws on ai.WebsiteRootUrl=aws.Url
-where ai.LatestVulnerabilityIsConfirmed=0
